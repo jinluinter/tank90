@@ -126,7 +126,7 @@
 #ifdef __CC_PLATFORM_IOS
 /** Returns a Boolean value indicating whether the CCDirector supports the specified orientation. Default value is YES (supports all possible orientations) */
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation;
-
+- (NSUInteger)supportedInterfaceOrientations;
 #endif // __CC_PLATFORM_IOS
 
 @end

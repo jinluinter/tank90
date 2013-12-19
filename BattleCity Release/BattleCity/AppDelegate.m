@@ -69,6 +69,7 @@
 	// make main window visible
 	[window_ makeKeyAndVisible];
 
+    window_.rootViewController = navController_;
 	// Default texture format for PNG/BMP/TIFF/JPEG/GIF images
 	// It can be RGBA8888, RGBA4444, RGB5_A1, RGB565
 	// You can change anytime. 设定主窗口显示图像的调色盘位宽。
@@ -96,10 +97,13 @@
 // Supported orientations: Landscape. Customize it for your own needs设置主窗口方向。(垂直迓是水平)
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
 {
-	return UIInterfaceOrientationIsLandscape(interfaceOrientation);
-
+	return UIInterfaceOrientationIsLandscape(UIDeviceOrientationLandscapeRight);
 }
 
+- (NSUInteger)supportedInterfaceOrientations
+{
+    return UIInterfaceOrientationMaskLandscape;
+}
 
 // getting a call, pause the game放弃控制权:
 -(void) applicationWillResignActive:(UIApplication *)application

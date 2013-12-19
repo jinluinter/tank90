@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>39550153-F83A-4153-A722-381BE2F4745D</string>
+	<key>IDESourceControlProjectName</key>
+	<string>BattleCity</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>D1F65439-9E4B-4F4A-8425-6BD543A84A10</key>
+		<string>https://github.com/iosGame/tank90.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>BattleCity Release/BattleCity.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>D1F65439-9E4B-4F4A-8425-6BD543A84A10</key>
+		<string>../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/iosGame/tank90.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>D1F65439-9E4B-4F4A-8425-6BD543A84A10</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>D1F65439-9E4B-4F4A-8425-6BD543A84A10</string>
+			<key>IDESourceControlWCCName</key>
+			<string>tank90</string>
+		</dict>
+	</array>
+</dict>
+</plist>

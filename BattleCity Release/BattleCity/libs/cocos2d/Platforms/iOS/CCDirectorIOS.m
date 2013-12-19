@@ -375,6 +375,18 @@ CGFloat	__ccContentScaleFactor = 1;
 	return ret;
 }
 
+-(NSUInteger)supportedInterfaceOrientations{
+    NSUInteger interfaceOrientation = UIInterfaceOrientationMaskAll;
+    if( [delegate_ respondsToSelector:_cmd] )
+        interfaceOrientation = (NSUInteger) [delegate_ supportedInterfaceOrientations];
+    return interfaceOrientation;
+}
+
+- (BOOL)shouldAutorotate
+{
+    return YES;
+}
+
 -(void)willRotateToInterfaceOrientation:(UIInterfaceOrientation)toInterfaceOrientation duration:(NSTimeInterval)duration
 {
 	// do something ?
