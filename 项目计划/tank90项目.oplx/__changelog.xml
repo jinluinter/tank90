@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<changelog xmlns="http://www.omnigroup.com/namespace/OmniPlan/v2">
+  <version>2.1</version>
+  <task-change-set user="Peng Shao" date="2013-12-20T12:39:28.049Z" timestamp="2013-12-20T12:39:28.049Z">
+    <change idref="t2" to="t-1" to-position="0" resolved="yes">
+      <change idref="t2" attribute="effort" type="real" from="28800" to="86400"/>
+      <change idref="t2" attribute="internalAssignments" type="string" from="" to="1; 2"/>
+      <change idref="t2" attribute="noEarlierThanConstraintDate" type="date" to="2013-12-21T02:00:00.000Z"/>
+      <change idref="t2" attribute="resourceLeveledDate" type="date" to="2013-12-21T02:00:00.000Z"/>
+      <change idref="t2" attribute="title" type="string" to="增加2P"/>
+    </change>
+    <change idref="t3" to="t-1" to-position="1" resolved="yes">
+      <change idref="t3" attribute="effort" type="real" from="28800" to="43200"/>
+      <change idref="t3" attribute="internalAssignments" type="string" from="" to="1"/>
+      <change idref="t3" attribute="internalPrerequisitesString" type="string" to="2FS"/>
+      <change idref="t3" attribute="noEarlierThanConstraintDate" type="date" to="2013-12-22T02:00:00.000Z"/>
+      <change idref="t3" attribute="resourceLeveledDate" type="date" to="2013-12-22T02:00:00.000Z"/>
+      <change idref="t3" attribute="title" type="string" to="增加2P控制接口"/>
+    </change>
+    <change idref="t4" to="t-1" to-position="2" resolved="yes">
+      <change idref="t4" attribute="effort" type="real" from="28800" to="79200"/>
+      <change idref="t4" attribute="internalAssignments" type="string" from="" to="2"/>
+      <change idref="t4" attribute="noEarlierThanConstraintDate" type="date" to="2013-12-21T02:00:00.000Z"/>
+      <change idref="t4" attribute="resourceLeveledDate" type="date" to="2013-12-22T02:00:00.000Z"/>
+      <change idref="t4" attribute="title" type="string" to="了解蓝牙通信模块"/>
+    </change>
+    <change idref="t5" to="t-1" to-position="3" resolved="yes">
+      <change idref="t5" attribute="effort" type="real" from="28800" to="86400"/>
+      <change idref="t5" attribute="internalAssignments" type="string" from="" to="1; 2"/>
+      <change idref="t5" attribute="internalPrerequisitesString" type="string" to="4FS"/>
+      <change idref="t5" attribute="noEarlierThanConstraintDate" type="date" to="2013-12-20T13:00:00.000Z"/>
+      <change idref="t5" attribute="noLaterThanConstrainedTaskEnd" type="real" from="1" to="0"/>
+      <change idref="t5" attribute="resourceLeveledDate" type="date" to="2013-12-28T02:00:00.000Z"/>
+      <change idref="t5" attribute="title" type="string" to="制作demo工程通过蓝牙控制2P"/>
+    </change>
+    <change idref="t6" to="t-1" to-position="4" resolved="yes">
+      <change idref="t6" attribute="effort" type="real" from="28800" to="86400"/>
+      <change idref="t6" attribute="internalAssignments" type="string" from="" to="1; 2"/>
+      <change idref="t6" attribute="internalPrerequisitesString" type="string" to="5FS"/>
+      <change idref="t6" attribute="noEarlierThanConstraintDate" type="date" to="2013-12-20T13:00:00.000Z"/>
+      <change idref="t6" attribute="resourceLeveledDate" type="date" to="2013-12-29T02:00:00.000Z"/>
+      <change idref="t6" attribute="title" type="string" to="蓝牙控制模块融入到工程中"/>
+    </change>
+    <change idref="t7" to="t-1" to-position="5" resolved="yes">
+      <change idref="t7" attribute="effort" type="real" from="28800" to="35100"/>
+      <change idref="t7" attribute="internalAssignments" type="string" from="" to="1; 2"/>
+      <change idref="t7" attribute="noEarlierThanConstraintDate" type="date" to="2013-12-30T13:00:00.000Z"/>
+      <change idref="t7" attribute="noLaterThanConstrainedTaskEnd" type="real" from="1" to="0"/>
+      <change idref="t7" attribute="resourceLeveledDate" type="date" to="2013-12-30T13:00:00.000Z"/>
+      <change idref="t7" attribute="title" type="string" to="调试bug"/>
+    </change>
+    <change idref="t8" to="t-1" to-position="6" resolved="yes">
+      <change idref="t8" attribute="effort" type="real" from="28800" to="115200"/>
+      <change idref="t8" attribute="internalAssignments" type="string" from="" to="1; 2"/>
+      <change idref="t8" attribute="internalPrerequisitesString" type="string" to="7FS"/>
+      <change idref="t8" attribute="noEarlierThanConstraintDate" type="date" to="2014-01-02T13:00:00.000Z"/>
+      <change idref="t8" attribute="noLaterThanConstrainedTaskEnd" type="real" from="1" to="0"/>
+      <change idref="t8" attribute="resourceLeveledDate" type="date" to="2014-01-02T13:00:00.000Z"/>
+      <change idref="t8" attribute="title" type="string" to="结束2.0版本"/>
+    </change>
+    <change idref="t1" attribute="criticalPathProperties" type="dict" to="{
+    color =     {
+        h = &quot;0.4&quot;;
+        s = &quot;0.5&quot;;
+        v = &quot;0.8&quot;;
+    };
+    enabled = 1;
+    root = 1;
+}" resolved="yes"/>
+  </task-change-set>
+  <task-change-set user="Peng Shao" date="2013-12-20T12:39:36.582Z" timestamp="2013-12-20T12:39:36.582Z">
+    <change idref="t5" attribute="noEarlierThanConstraintDate" type="date" from="2013-12-20T13:00:00.000Z" to="2013-12-21T02:00:00.000Z"/>
+  </task-change-set>
+  <resource-change-set user="Peng Shao" date="2013-12-20T12:39:28.048Z" timestamp="2013-12-20T12:39:28.048Z">
+    <change idref="r-1" attribute="standardHoursString" type="string" from="-;-;-;-;-;-;-" to="36000,79200;75600,82800;75600,82800;75600,82800;75600,82800;75600,82800;36000,79200" resolved="yes"/>
+    <change idref="r2" to="r-1" to-position="1" resolved="yes">
+      <change idref="r2" attribute="name" type="string" to="JL"/>
+    </change>
+    <change idref="r1" attribute="name" type="string" from="资源 1" to="ME" resolved="yes"/>
+  </resource-change-set>
+  <metadata-change-set user="Peng Shao" date="2013-12-20T12:39:28.048Z" timestamp="2013-12-20T12:39:28.048Z">
+    <change idref="m1" attribute="fixedDate" type="date" from="2007-01-01T20:00:00.000Z" to="2013-12-20T00:00:00.000Z" resolved="yes"/>
+  </metadata-change-set>
+  <metadata-change-set user="Peng Shao" date="2013-12-20T12:39:36.582Z" timestamp="2013-12-20T12:39:36.582Z">
+    <change idref="m1" attribute="baselineInfo" type="dict" from="{
+    info =     (
+    );
+}" to="{
+    info =     (
+                {
+            name = &quot;\U57fa\U7ebf 13-12-21&quot;;
+            uuid = bqBG7oeAL9e;
+        }
+    );
+}"/>
+  </metadata-change-set>
+</changelog>

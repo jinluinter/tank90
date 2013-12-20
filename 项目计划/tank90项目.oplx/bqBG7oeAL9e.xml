@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<scenario xmlns="http://www.omnigroup.com/namespace/OmniPlan/v2" id="bqBG7oeAL9e">
+  <start-date>2013-12-20T00:00:00.000Z</start-date>
+  <prototype-task>
+    <task id="t4294967294">
+      <title>任务 1</title>
+      <effort>28800</effort>
+    </task>
+  </prototype-task>
+  <prototype-task>
+    <task id="t4294967293">
+      <title>里程碑 1</title>
+      <type>milestone</type>
+    </task>
+  </prototype-task>
+  <prototype-task>
+    <task id="t4294967292">
+      <title>群组 1</title>
+      <type>group</type>
+    </task>
+  </prototype-task>
+  <prototype-resource>
+    <resource id="r4294967294">
+      <name>资源 1</name>
+      <type>Staff</type>
+    </resource>
+  </prototype-resource>
+  <prototype-resource>
+    <resource id="r4294967293">
+      <name>设备 1</name>
+      <type>Equipment</type>
+    </resource>
+  </prototype-resource>
+  <prototype-resource>
+    <resource id="r4294967292">
+      <name>素材 1</name>
+      <type>Material</type>
+      <units-available>0</units-available>
+      <efficiency>0</efficiency>
+    </resource>
+  </prototype-resource>
+  <prototype-resource>
+    <resource id="r4294967291">
+      <name>群组 1</name>
+      <type>Group</type>
+    </resource>
+  </prototype-resource>
+  <top-resource idref="r-1"/>
+  <resource id="r-1">
+    <type>Group</type>
+    <schedule>
+      <schedule-day day-of-week="sunday">
+        <time-span start-time="36000" end-time="79200"/>
+      </schedule-day>
+      <schedule-day day-of-week="monday">
+        <time-span start-time="75600" end-time="82800"/>
+      </schedule-day>
+      <schedule-day day-of-week="tuesday">
+        <time-span start-time="75600" end-time="82800"/>
+      </schedule-day>
+      <schedule-day day-of-week="wednesday">
+        <time-span start-time="75600" end-time="82800"/>
+      </schedule-day>
+      <schedule-day day-of-week="thursday">
+        <time-span start-time="75600" end-time="82800"/>
+      </schedule-day>
+      <schedule-day day-of-week="friday">
+        <time-span start-time="75600" end-time="82800"/>
+      </schedule-day>
+      <schedule-day day-of-week="saturday">
+        <time-span start-time="36000" end-time="79200"/>
+      </schedule-day>
+      <calendar name="Time Off" editable="yes" overtime="no"/>
+      <calendar name="Overtime" editable="yes" overtime="yes"/>
+    </schedule>
+    <child-resource idref="r1"/>
+    <child-resource idref="r2"/>
+  </resource>
+  <resource id="r1">
+    <name>ME</name>
+    <type>Staff</type>
+  </resource>
+  <resource id="r2">
+    <name>JL</name>
+    <type>Staff</type>
+  </resource>
+  <top-task idref="t-1"/>
+  <task id="t-1">
+    <type>group</type>
+    <child-task idref="t2"/>
+    <child-task idref="t3"/>
+    <child-task idref="t4"/>
+    <child-task idref="t5"/>
+    <child-task idref="t6"/>
+    <child-task idref="t7"/>
+    <child-task idref="t8"/>
+    <child-task idref="t1"/>
+  </task>
+  <task id="t1">
+    <title>tank2.0增加蓝牙联机功能</title>
+    <type>milestone</type>
+    <start-constraint-date>2014-01-05T02:00:00.000Z</start-constraint-date>
+    <start-no-earlier-than>2014-01-05T02:00:00.000Z</start-no-earlier-than>
+  </task>
+  <task id="t2">
+    <title>增加2P</title>
+    <leveled-start>2013-12-21T02:00:00.000Z</leveled-start>
+    <effort>86400</effort>
+    <start-constraint-date>2013-12-21T02:00:00.000Z</start-constraint-date>
+    <assignment idref="r1"/>
+    <assignment idref="r2"/>
+    <start-no-earlier-than>2013-12-21T02:00:00.000Z</start-no-earlier-than>
+  </task>
+  <task id="t3">
+    <title>增加2P控制接口</title>
+    <leveled-start>2013-12-22T02:00:00.000Z</leveled-start>
+    <effort>43200</effort>
+    <start-constraint-date>2013-12-22T02:00:00.000Z</start-constraint-date>
+    <prerequisite-task idref="t2"/>
+    <assignment idref="r1"/>
+    <start-no-earlier-than>2013-12-22T02:00:00.000Z</start-no-earlier-than>
+  </task>
+  <task id="t4">
+    <title>了解蓝牙通信模块</title>
+    <leveled-start>2013-12-22T02:00:00.000Z</leveled-start>
+    <effort>79200</effort>
+    <start-constraint-date>2013-12-21T02:00:00.000Z</start-constraint-date>
+    <assignment idref="r2"/>
+    <start-no-earlier-than>2013-12-21T02:00:00.000Z</start-no-earlier-than>
+  </task>
+  <task id="t5">
+    <title>制作demo工程通过蓝牙控制2P</title>
+    <leveled-start>2013-12-28T02:00:00.000Z</leveled-start>
+    <effort>86400</effort>
+    <start-constraint-date>2013-12-20T13:00:00.000Z</start-constraint-date>
+    <prerequisite-task idref="t4"/>
+    <assignment idref="r1"/>
+    <assignment idref="r2"/>
+    <start-no-earlier-than>2013-12-20T13:00:00.000Z</start-no-earlier-than>
+  </task>
+  <task id="t6">
+    <title>蓝牙控制模块融入到工程中</title>
+    <leveled-start>2013-12-29T02:00:00.000Z</leveled-start>
+    <effort>86400</effort>
+    <start-constraint-date>2013-12-20T13:00:00.000Z</start-constraint-date>
+    <prerequisite-task idref="t5"/>
+    <assignment idref="r1"/>
+    <assignment idref="r2"/>
+    <start-no-earlier-than>2013-12-20T13:00:00.000Z</start-no-earlier-than>
+  </task>
+  <task id="t7">
+    <title>调试bug</title>
+    <leveled-start>2013-12-30T13:00:00.000Z</leveled-start>
+    <effort>35100</effort>
+    <start-constraint-date>2013-12-30T13:00:00.000Z</start-constraint-date>
+    <assignment idref="r1"/>
+    <assignment idref="r2"/>
+    <start-no-earlier-than>2013-12-30T13:00:00.000Z</start-no-earlier-than>
+  </task>
+  <task id="t8">
+    <title>结束2.0版本</title>
+    <leveled-start>2014-01-02T13:00:00.000Z</leveled-start>
+    <effort>115200</effort>
+    <start-constraint-date>2014-01-02T13:00:00.000Z</start-constraint-date>
+    <prerequisite-task idref="t7"/>
+    <assignment idref="r1"/>
+    <assignment idref="r2"/>
+    <start-no-earlier-than>2014-01-02T13:00:00.000Z</start-no-earlier-than>
+  </task>
+  <critical-path root="-1" enabled="false" resources="false">
+    <color r="1" g="0.5" b="0.5"/>
+  </critical-path>
+  <critical-path root="1" enabled="true" resources="false">
+    <color h="0.4" s="0.5" v="0.8"/>
+  </critical-path>
+</scenario>
