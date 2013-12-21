@@ -1127,7 +1127,6 @@
 				35DB9E4815D4B19F0080E1C8 /* Sources */,
 				35DB9E4915D4B19F0080E1C8 /* Frameworks */,
 				35DB9E4A15D4B19F0080E1C8 /* Resources */,
-				35DBA04015D4B54C0080E1C8 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -1232,22 +1231,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		35DBA04015D4B54C0080E1C8 /* ShellScript */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "export CODESIGN_ALLOCATE=/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/codesign_allocate\nif [ \"${PLATFORM_NAME}\" == \"iphoneos\" ] || [ \"${PLATFORM_NAME}\" == \"ipados\" ]; then\n/Applications/Xcode.app/Contents/Developer/iphoneentitlements/gen_entitlements.py \"my.company.${PROJECT_NAME}\" \"${BUILT_PRODUCTS_DIR}/${WRAPPER_NAME}/${PROJECT_NAME}.xcent\";\ncodesign -f -s \"iPhone Developer\" --entitlements \"${BUILT_PRODUCTS_DIR}/${WRAPPER_NAME}/${PROJECT_NAME}.xcent\" \"${BUILT_PRODUCTS_DIR}/${WRAPPER_NAME}/\"\nfi";
-		};
-/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		35DB9E4815D4B19F0080E1C8 /* Sources */ = {
@@ -1435,7 +1418,7 @@
 					"-ObjC",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "86A128A9-9157-449D-A774-C427CC728500";
+				PROVISIONING_PROFILE = "3486B563-887E-440F-BD62-C799F8BCC113";
 				SDKROOT = iphoneos6.1;
 				WRAPPER_EXTENSION = app;
 			};
@@ -1458,7 +1441,7 @@
 					"-ObjC",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "86A128A9-9157-449D-A774-C427CC728500";
+				PROVISIONING_PROFILE = "3486B563-887E-440F-BD62-C799F8BCC113";
 				SDKROOT = iphoneos6.1;
 				VALIDATE_PRODUCT = YES;
 				WRAPPER_EXTENSION = app;
